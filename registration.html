@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Member Registration - Inuka</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <h1>Inuka Self Help Group</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="register.html">Register</a>
+  </nav>
+</header>
+
+<section>
+  <h2>To become a Member</h2>
+
+  <form id="registerForm">
+    <input type="text" id="name" placeholder="Full Name" required><br><br>
+    <input type="email" id="email" placeholder="Email Address" required><br><br>
+    <input type="tel" id="phone" placeholder="Phone Number" required><br><br>
+
+    <select id="gender" required>
+      <option value="">Select Gender</option>
+      <option>Male</option>
+      <option>Female</option>
+    </select><br><br>
+
+    <textarea id="reason" placeholder="Why do you want to join?" required></textarea><br><br>
+
+    <button type="submit">Register</button>
+  </form>
+
+  <p id="message"></p>
+</section>
+
+<script src="js/script.js"></script>
+</body>
+</html>
