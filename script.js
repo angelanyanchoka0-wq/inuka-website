@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
         gender: document.getElementById("gender").value,
         reason: document.getElementById("reason").value
       };
-      fetch("https://script.google.com/macros/s/AKfycbz68BY7J0-mkVFTn_Wibl80XmtMeeYufCCosWhLRC332IvAJ918KlXuOZ1wb4zT5rKO/exec", {
+      fetch( "<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf4nPuOg6N4zjJEYFkwlYBLgthN-vmrqKvb9yFZ1xeBXIAVfQ/viewform?embedded=true" width="640" height="1022" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>", {
   method: "POST",
   mode: "no-cors", 
   headers: {
@@ -71,4 +71,5 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
 });
+
 
