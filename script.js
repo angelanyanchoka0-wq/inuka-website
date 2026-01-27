@@ -26,16 +26,24 @@ document.addEventListener("DOMContentLoaded", function () {
         gender: document.getElementById("gender").value,
         reason: document.getElementById("reason").value
       };
-
       fetch("https://script.google.com/macros/s/AKfycbz68BY7J0-mkVFTn_Wibl80XmtMeeYufCCosWhLRC332IvAJ918KlXuOZ1wb4zT5rKO/exec", {
-        method: "POST",
-        body: JSON.stringify(data),
-      })
-      .then(() => {
-        message.textContent = "Registration successful!";
-        message.style.color = "green";
-        form.reset();
-      })
+  method: "POST",
+  mode: "no-cors", 
+  headers: {
+    "Content-Type": "application/json"
+  },
+  body: JSON.stringify(data)
+})
+.then(() => {
+  message.textContent = "✅ Registration successful!";
+  message.style.color = "green";
+  form.reset();
+})
+.catch(() => {
+  message.textContent = "❌ Error submitting form";
+  message.style.color = "red";
+});
+
       .catch(() => {
         message.textContent = "Error submitting form";
         message.style.color = "red";
@@ -61,4 +69,5 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   }
+
 });
