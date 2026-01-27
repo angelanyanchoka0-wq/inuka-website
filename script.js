@@ -15,22 +15,15 @@ document.addEventListener("DOMContentLoaded", function () {
   const form = document.getElementById("registerForm");
   const message = document.getElementById("message");
 
-  if (form) {
-    form.addEventListener("submit", function (e) {
-      e.preventDefault();
-
-      const data = {
-        name: document.getElementById("name").value,
-        email: document.getElementById("email").value,
-        phone: document.getElementById("phone").value,
-        gender: document.getElementById("gender").value,
-        reason: document.getElementById("reason").value
-      };
-      fetch( "<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf4nPuOg6N4zjJEYFkwlYBLgthN-vmrqKvb9yFZ1xeBXIAVfQ/viewform?embedded=true" width="640" height="1022" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>", {
-  method: "POST",
-  mode: "no-cors", 
-  headers: {
-    "Content-Type": "application/json"
+  <iframe
+   src="https://docs.google.com/forms/d/e/1FAIpQLSf4nPuOg6N4zjJEYFkwlYBLgthN-vmrqKvb9yFZ1xeBXIAVfQ/viewform?embedded=true" width="640" height="1022" frameborder="0" marginheight="0" marginwidth="0">Loading…"
+  width="100%"
+  height="600"
+  frameborder="0"
+  marginheight="0"
+  marginwidth="0">
+  Loading…
+</iframe>
   },
   body: JSON.stringify(data)
 })
@@ -71,5 +64,6 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
 });
+
 
 
