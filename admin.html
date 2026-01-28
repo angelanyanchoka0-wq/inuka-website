@@ -2,28 +2,36 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Admin Login - Inuka</title>
+  <title>Admin | Inuka Self Help Group</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
-  <h1>Inuka Admin Panel</h1>
+  <h1>Admin Panel</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="registration.html">Register</a>
+  </nav>
 </header>
 
-<section>
+<main class="container">
   <h2>Admin Login</h2>
 
-  <form id="adminForm">
-    <input type="password" id="adminPass" placeholder="Enter Admin password" required><br><br>
-    <button type="submit">Login</button>
-  </form>
+  <input
+    type="password"
+    id="adminPass"
+    placeholder="Enter admin password">
+
+  <br><br>
+
+  <button onclick="checkPassword()">Login</button>
 
   <p id="adminMessage"></p>
-</section>
-
+</main>
 <script src="script.js"></script>
-</body>
 
+</body>
 </html>
 
